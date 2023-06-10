@@ -53,6 +53,11 @@ body[data-theme="dark"] .markdown-body {
   --liting-color-bg-blockquote: #334155;
 }
 
+// 同步开发模式下当前掘金深色模式背景色（开发工具没更新）
+html.__dark article {
+  background: #181818 !important;
+}
+
 .markdown-body {
   word-break: break-word;
   line-height: 1.5;
