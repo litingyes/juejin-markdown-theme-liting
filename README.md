@@ -1,6 +1,6 @@
-# juejin 默认主题
+# liting
 
-主题列表：https://github.com/xitu/juejin-markdown-themes
+一个自定义掘金 markdown 主题
 
 ## License
 

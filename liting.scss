@@ -1,4 +1,31 @@
-$monospace-font: Menlo, Monaco, Consolas, 'Courier New', monospace;
+@font-face {
+  font-family: "Chinese Quotes";
+  src: local("PingFang SC Regular"), local("PingFang SC"), local("SimHei"), local("Source Han Sans SC");
+  unicode-range: U+2018, U+2019, U+201C, U+201D;
+}
+
+@font-face {
+  font-family: "LXGW WenKai Screen";
+  src: url("https://cdn.jsdelivr.net/gh/liting-yes/cdn@main/fonts/LXGWWenKaiScreenR.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LXGW WenKai Screen GB";
+  src: url("https://cdn.jsdelivr.net/gh/liting-yes/cdn@main/fonts/LXGWWenKaiGBScreenR%20.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// 字体引用 [霞鹜文楷屏幕阅读版](https://github.com/lxgw/LxgwWenKai-Screen.git) 并参考 [vitepress](https://github.com/vuejs/vitepress.git) 的字体预设
+$font-family-base: "Chinese Quotes", "LXGW WenKai Screen", "Inter", ui-sans-serif, system-ui, -apple-system,
+  BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-mono: "LXGW WenKai Screen GB", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
 $line-space: 22px;
 
 .markdown-body {
@@ -8,6 +35,7 @@ $line-space: 22px;
   font-size: 16px;
   overflow-x: hidden;
   color: #333;
+  font-family: $font-family-base;
 
   h1,
   h2,
@@ -25,7 +53,11 @@ $line-space: 22px;
     font-size: 24px;
     margin-bottom: 5px;
   }
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 20px;
   }
   h2 {
@@ -60,7 +92,7 @@ $line-space: 22px;
   }
 
   code {
-    font-family: $monospace-font;
+    font-family: $font-family-mono;
     word-break: break-word;
     border-radius: 2px;
     overflow-x: auto;
@@ -71,7 +103,7 @@ $line-space: 22px;
   }
 
   pre {
-    font-family: $monospace-font;
+    font-family: $font-family-mono;
     overflow: auto;
     position: relative;
     line-height: 1.75;
@@ -130,7 +162,7 @@ $line-space: 22px;
     background-color: #f8f8f8;
     &::after {
       display: block;
-      content: '';
+      content: "";
     }
     & > p {
       margin: 10px 0;
@@ -160,7 +192,7 @@ $line-space: 22px;
   ol li {
     padding-left: 6px;
   }
-  
+
   .contains-task-list {
     padding-left: 0;
   }
