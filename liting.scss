@@ -14,8 +14,8 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap");
-  font-weight: 400 700;
+  src: url("https://cdn.jsdelivr.net/gh/liting-yes/cdn@main/fonts/JetBrainsMono-Bold.ttf");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -132,7 +132,7 @@ body[data-theme="dark"] .markdown-body {
     color: var(--liging-color-code);
     border-radius: 4px;
     padding: 4px 8px;
-    font-size: 0.87rem;
+    font-size: 0.875em;
   }
 
   code {
@@ -141,7 +141,7 @@ body[data-theme="dark"] .markdown-body {
     word-break: break-word;
     overflow-x: auto;
     color: var(--liging-color-code);
-    font-size: 0.87rem;
+    font-size: 0.875em;
     padding: 4px 8px;
   }
 
