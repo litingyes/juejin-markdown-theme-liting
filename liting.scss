@@ -36,9 +36,11 @@ $font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Me
   --liting-color-link-active: #4ade80;
   --liting-color-bg-thead: #e2e8f0;
   --liting-color-bg-item: #f1f5f9;
+  --liting-color-blockquote: #475569;
   --liting-color-bg-blockquote: #f1f5f9;
 
   --liting-paragraph-space: 1.2rem;
+  --liting-radius: 12px;
 }
 
 // dev 黑夜模式 , prod 黑夜模式
@@ -50,6 +52,7 @@ body[data-theme="dark"] .markdown-body {
   --liting-color-code-bg: #334155;
   --liting-color-bg-thead: #475569;
   --liting-color-bg-item: #64748b;
+  --liting-color-blockquote: #94a3b8;
   --liting-color-bg-blockquote: #334155;
 }
 
@@ -208,9 +211,11 @@ html.__dark article {
     margin: 24px 0;
     border-left: 4px solid #64748b;
     background-color: var(--liting-color-bg-blockquote);
+    border-radius: 0 var(--liting-radius) var(--liting-radius) 0;
 
     & > p {
       margin: 8px 0;
+      color: var(--liting-color-blockquote);
     }
   }
 
