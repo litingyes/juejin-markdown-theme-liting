@@ -291,14 +291,28 @@ html.__dark article {
   }
 
   @media (max-width: 720px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1.5;
+      margin-top: 0.75em;
+      margin-bottom: 0.5em;
+    }
+
     h1 {
-      font-size: 24px;
+      font-size: 1.5em;
     }
     h2 {
-      font-size: 20px;
+      font-size: 1.25em;
     }
-    h3 {
-      font-size: 18px;
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1em;
     }
   }
 }
