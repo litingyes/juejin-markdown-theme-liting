@@ -118,7 +118,7 @@ html.__dark article {
 
   img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: var(--liting-radius);
     overflow: hidden;
     transition: transform 0.3s ease;
 
@@ -128,7 +128,8 @@ html.__dark article {
   }
 
   hr {
-    border-top: 1px solid var(--liting-color-hr);
+    border: none;
+    border-top: 2px solid #f59e0b;
     margin: 2em 0;
   }
 
