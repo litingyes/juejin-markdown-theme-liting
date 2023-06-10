@@ -40,7 +40,7 @@ $font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Me
   --liting-color-link: #d97706;
   --liting-color-link-active: #fbbf24;
 
-  --liting-paragraph-space: 1.2rem;
+  --liting-paragraph-space: 1.5em;
   --liting-radius: 12px;
 }
 
@@ -78,8 +78,8 @@ html.__dark article {
   h5,
   h6 {
     line-height: 2;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 0.75em;
 
     &::before {
       content: "🪶";
@@ -129,7 +129,7 @@ html.__dark article {
 
   hr {
     border-top: 1px solid var(--liting-color-hr);
-    margin: 2rem 0;
+    margin: 2em 0;
   }
 
   pre {
