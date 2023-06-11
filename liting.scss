@@ -28,7 +28,8 @@ $font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Me
   "Courier New", monospace;
 
 :root {
-  --liting-color: #1e293b;
+  --liting-color: #334155;
+  --liting-color-hover: #020617;
   --liting-color-hr: #020617;
   --liting-color-code: #334155;
   --liting-color-code-bg: #f1f5f9;
@@ -47,7 +48,8 @@ $font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Me
 // dev 黑夜模式 , prod 黑夜模式
 html.__dark .markdown-body,
 body[data-theme="dark"] .markdown-body {
-  --liting-color: #e2e8f0;
+  --liting-color: #cbd5e1;
+  --liting-color-hover: #f1f5f9;
   --liting-color-hr: #f8fafc;
   --liting-color-code: #cbd5e1;
   --liting-color-code-bg: #334155;
@@ -114,6 +116,11 @@ html.__dark article {
   p {
     line-height: inherit;
     margin-top: var(--liting-paragraph-space) 0;
+    transform: color 0.6s ease;
+
+    &:hover {
+      color: var(--liting-color-hover);
+    }
   }
 
   img {
