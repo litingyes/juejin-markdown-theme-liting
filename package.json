@@ -2,7 +2,14 @@
   "name": "juejin-markdown-theme-default",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "dev": "jjsm liting.scss"
+  },
   "dependencies": {
     "bytemd": "^1.2.0"
+  },
+  "devDependencies": {
+    "juejin-theme-devtool": "^0.0.4",
+    "sass": "^1.63.6"
   }
 }
