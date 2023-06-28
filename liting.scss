@@ -1,31 +1,9 @@
-@font-face {
-  font-family: "Chinese Quotes";
-  src: local("PingFang SC Regular"), local("PingFang SC"), local("SimHei"), local("Source Han Sans SC");
-  unicode-range: U+2018, U+2019, U+201C, U+201D;
-}
-
-@font-face {
-  font-family: "LXGW WenKai Screen";
-  src: url("https://cdn.jsdelivr.net/gh/liting-yes/cdn@main/fonts/LXGWWenKaiScreenR.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("https://cdn.jsdelivr.net/gh/liting-yes/cdn@main/fonts/JetBrainsMono-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-// 字体引用 [霞鹜文楷屏幕阅读版](https://github.com/lxgw/LxgwWenKai-Screen.git) 与 JetBrains Mono  并参考 [vitepress](https://github.com/vuejs/vitepress.git) 的字体预设
-$font-family-base: "Chinese Quotes", "LXGW WenKai Screen", "Inter", ui-sans-serif, system-ui, -apple-system,
-  BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono",
-  "Courier New", monospace;
+// 引用 [vitepress](https://github.com/vuejs/vitepress.git) 的字体预设
+$font-family-base: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+$font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+  monospace;
 
 :root {
   --liting-color: #334155;
