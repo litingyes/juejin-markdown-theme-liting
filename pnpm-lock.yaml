@@ -351,7 +351,7 @@ packages:
       proto-list: 1.2.4
     dev: true
 
-  /consolidate@0.15.1(ejs@3.1.9):
+  /consolidate@0.15.1(ejs@3.1.10):
     resolution: {integrity: sha512-DW46nrsMJgy9kqAbPt5rKaCr7uFtpo4mSUvLHIUbJEjm0vo+aY5QLwBUq3FK4tRnJr/X0Psc0C4jf/h+HtXSMw==}
     engines: {node: '>= 0.10.0'}
     deprecated: Please upgrade to consolidate v1.0.0+ as it has been modernized with several long-awaited fixes implemented. Maintenance is supported by Forward Email at https://forwardemail.net ; follow/watch https://github.com/ladjs/consolidate for updates and release changelog
@@ -518,7 +518,7 @@ packages:
         optional: true
     dependencies:
       bluebird: 3.7.2
-      ejs: 3.1.9
+      ejs: 3.1.10
     dev: true
 
   /content-disposition@0.5.4:
@@ -644,8 +644,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /ejs@3.1.9:
-    resolution: {integrity: sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==}
+  /ejs@3.1.10:
+    resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     dependencies:
@@ -1123,11 +1123,11 @@ packages:
     hasBin: true
     dependencies:
       chokidar: 3.5.3
-      ejs: 3.1.9
+      ejs: 3.1.10
       koa: 2.14.2
       koa-router: 10.1.1
       koa-static: 5.0.0
-      koa-views: 6.3.1(ejs@3.1.9)
+      koa-views: 6.3.1(ejs@3.1.10)
       node-fetch: 2.6.11
       remark: 13.0.0
       remark-footnotes: 3.0.0
@@ -1269,11 +1269,11 @@ packages:
       - supports-color
     dev: true
 
-  /koa-views@6.3.1(ejs@3.1.9):
+  /koa-views@6.3.1(ejs@3.1.10):
     resolution: {integrity: sha512-weIaPs2cCHWT2qK8qHRmwlZ29xRCvUVy1v/z12AGavVV5j4QIU0W/Y7OVBBu1sTkcO9dDJ25ajGYHGZ/aY43IQ==}
     deprecated: This package is deprecated, please use the new fork @ladjs/koa-views. Maintenance is supported by Forward Email at https://forwardemail.net ; follow/watch https://github.com/ladjs/koa-views for updates and release changelog
     dependencies:
-      consolidate: 0.15.1(ejs@3.1.9)
+      consolidate: 0.15.1(ejs@3.1.10)
       debug: 4.3.4
       get-paths: 0.0.7
       koa-send: 5.0.1
